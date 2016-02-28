@@ -1,0 +1,11 @@
+install:
+- gem install asciidoctor
+script:
+- asciidoctor faq.adoc -o html/faq.html
+env:
+  global:
+    - GH_REF: SiteIntegrationContinue/site-statique-en-integration-continue.git
+    - secure: lFnMEEBBniU+KwB1MgwCvBpcoxbbI1F9CcTttgAr29C5QYoMqMLYqSzqbofhkmaRzIxJBAFEFaBxMhdTKurJwVceCaAsL8/e6oxVHFy5G7irTihkytsguzk/ghRbp7te5dJE2Q+bJeu8+vsoa+/u8HvOHzQ/sAZKFMq0upemh7/q+5tTh9EQI+LPBi8ue8egeAHX4PFr7ZHSIX5RCDBddKRf3FKYTxJrvIxOVsuuw9CzLPXs0qntAXFBoS/C41E207zxywnppR+A19ezyd+Rzb0RiolKNM+gPliLaFE0Ft3U5Gwv+iuRhMy21V6BFyzwMoXql3sJs9bb8zcbFUXTzGKek7qnPUo/C5Jp3edeHrAeQUsCI73kouZfjl+SWINiCIRYd2ivvIrTaENdzetsY/rCjH8PDBMdHjfb4QtPixSqxqicgXb/aAkSgwjci7g7G2Bfd0Ea5FEytjX8Sr/3QoSVKrj+cek7QM9OR+hOnRVtmBCGNHunAfwWDx+8ozCaLktaStkWlqTGAAjcNLdGPLztdJTN44+p1iOXKpb+PVpo/wPJ2ySLD+raQO2laMiBpB6tr5wkpHogIw9TGPzMCSt7IFaRneF3/XreNgfEIK8n+N7qzoxFVOQYvICsNbR3Rha87zBv5u2fQDylg57Kf4nIsNQTn5TWdpbFFjyFpYY=
+after_success: 
+- bash monscript.sh
+
