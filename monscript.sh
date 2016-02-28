@@ -30,6 +30,6 @@ cp $HOME/html/faq.html ./index.html
 
 
  echo -e "Deploy completed\n"
-
+  
 
  #fi
